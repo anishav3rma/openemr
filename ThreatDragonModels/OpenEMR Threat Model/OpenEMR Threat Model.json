@@ -19,8 +19,92 @@
         "cells": [
           {
             "position": {
-              "x": 570,
-              "y": 460
+              "x": 9.999999999999858,
+              "y": 270
+            },
+            "size": {
+              "width": 490,
+              "height": 330
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "84a9a9bb-4b2e-4f4d-a0ff-27cf9de657e9",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 760,
+              "y": 455
+            },
+            "size": {
+              "width": 340,
+              "height": 180
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "6fec31ea-f904-43d7-a535-c7934ee26e06",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 748.75,
+              "y": 5.000000000000014
+            },
+            "size": {
+              "width": 480,
+              "height": 200
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "cc4cfae2-f256-4322-b7e6-6e7d8038a652",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 530,
+              "y": 240
+            },
+            "size": {
+              "width": 230,
+              "height": 140
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "81b00b43-84e1-4842-b8f1-6662f821a8f6",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 560,
+              "y": 520
             },
             "size": {
               "width": 140,
@@ -372,7 +456,7 @@
           {
             "position": {
               "x": 30,
-              "y": 240
+              "y": 280
             },
             "size": {
               "width": 140,
@@ -526,7 +610,7 @@
           },
           {
             "position": {
-              "x": 730,
+              "x": 748.75,
               "y": 40
             },
             "size": {
@@ -784,7 +868,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Excessive Messages",
-              "description": "",
+              "description": "Sending an overwhelming amount of messages.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -862,7 +946,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Altered",
-              "description": "",
+              "description": "Changes to patient database.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -940,7 +1024,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Exposed Records",
-              "description": "",
+              "description": "Sensitive records are not encrypted.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -1010,7 +1094,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Modifies Billing",
-              "description": "",
+              "description": "Changes to billing information.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -1075,7 +1159,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Brute Force",
-              "description": "",
+              "description": "Brute force login attempts.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -1125,8 +1209,8 @@
           },
           {
             "position": {
-              "x": 1040,
-              "y": 10
+              "x": 1038.75,
+              "y": 30
             },
             "size": {
               "width": 190,
@@ -1266,8 +1350,8 @@
           },
           {
             "position": {
-              "x": 823.75,
-              "y": 480
+              "x": 830,
+              "y": 490
             },
             "size": {
               "width": 200,
@@ -1512,7 +1596,7 @@
               "threats": [
                 {
                   "id": "d3500725-d335-4ba6-b391-2d7469464503",
-                  "title": "Loss of data from logs",
+                  "title": "Loss of Data from Logs",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
@@ -1526,7 +1610,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1534,12 +1618,12 @@
           },
           {
             "position": {
-              "x": 530,
-              "y": 200
+              "x": 560,
+              "y": 265
             },
             "size": {
-              "width": 180,
-              "height": 100
+              "width": 170,
+              "height": 90
             },
             "attrs": {
               "text": {
