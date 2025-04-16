@@ -1,0 +1,1775 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "OpenEMR Threat Model",
+    "owner": "Anisha",
+    "description": "Threat modeling using OWASP Threat Dragon on the OpenEMR application.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [
+          {
+            "position": {
+              "x": 9.999999999999858,
+              "y": 270
+            },
+            "size": {
+              "width": 490,
+              "height": 330
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "84a9a9bb-4b2e-4f4d-a0ff-27cf9de657e9",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 760,
+              "y": 455
+            },
+            "size": {
+              "width": 340,
+              "height": 180
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "6fec31ea-f904-43d7-a535-c7934ee26e06",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 748.75,
+              "y": 5.000000000000014
+            },
+            "size": {
+              "width": 480,
+              "height": 200
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "cc4cfae2-f256-4322-b7e6-6e7d8038a652",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 530,
+              "y": 240
+            },
+            "size": {
+              "width": 230,
+              "height": 140
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "81b00b43-84e1-4842-b8f1-6662f821a8f6",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 560,
+              "y": 520
+            },
+            "size": {
+              "width": 140,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Admin"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "74dbaa77-44ba-4e55-87e2-24a7599ab8c3"
+                },
+                {
+                  "group": "right",
+                  "id": "c3737849-5573-4fbe-86cf-e0087023184e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "eba1bd62-c8d1-4a2d-affd-e2147302a87a"
+                },
+                {
+                  "group": "left",
+                  "id": "e80bcb9a-2e58-4579-9f74-1a0d1c065962"
+                }
+              ]
+            },
+            "id": "41806308-d631-430b-92e3-7e1a5ba9e868",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Admin",
+              "description": "The administrator of the application.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 460,
+              "y": 40
+            },
+            "size": {
+              "width": 170,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Healthcare Provider"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "74dbaa77-44ba-4e55-87e2-24a7599ab8c3"
+                },
+                {
+                  "group": "right",
+                  "id": "c3737849-5573-4fbe-86cf-e0087023184e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "eba1bd62-c8d1-4a2d-affd-e2147302a87a"
+                },
+                {
+                  "group": "left",
+                  "id": "e80bcb9a-2e58-4579-9f74-1a0d1c065962"
+                }
+              ]
+            },
+            "id": "bbd7daa1-e137-4be7-91c1-99c64c9d9d1f",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Healthcare Provider",
+              "description": "Clinical people who have access to and can manage patient records. ",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 150,
+              "y": 20
+            },
+            "size": {
+              "width": 130,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Patient"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "74dbaa77-44ba-4e55-87e2-24a7599ab8c3"
+                },
+                {
+                  "group": "right",
+                  "id": "c3737849-5573-4fbe-86cf-e0087023184e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "eba1bd62-c8d1-4a2d-affd-e2147302a87a"
+                },
+                {
+                  "group": "left",
+                  "id": "e80bcb9a-2e58-4579-9f74-1a0d1c065962"
+                }
+              ]
+            },
+            "id": "5876b49a-ba91-4e9b-8301-b7921ec08763",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Patient",
+              "description": "Those receiving medical treatment, if clinic uses the Patient Portal on OpenEMR.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [],
+              "threatFrequency": {
+                "spoofing": 0,
+                "repudiation": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 30,
+              "y": 280
+            },
+            "size": {
+              "width": 140,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Login"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4c70bb57-fed0-4ab3-8295-acbadd68d4c5"
+                },
+                {
+                  "group": "right",
+                  "id": "3ff74f84-cad0-41e9-8984-266435c087a5"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2614a329-3911-4fa0-8a7c-a4113c69fc3d"
+                },
+                {
+                  "group": "left",
+                  "id": "06d338f9-5ac9-4134-80c3-d110fc3cb303"
+                }
+              ]
+            },
+            "id": "c4602fad-de9c-42b6-b0c1-fd5a870bb0c6",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "Login",
+              "description": "Clinical or patient individuals logging into OpenEMR.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "bc8d2190-a799-4293-8736-522e85b4e314",
+                  "title": "Attacker Logging In - stolen credentials, patient",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "An attacker can pretend to be a patient logging into OpenEMR with stolen credentials - EoP Spoofing #8",
+                  "mitigation": "Integrate Multi Factor Authorization (MFA) into login and lockout the account if there are too many login attempts detected.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "600568b1-3368-4b43-ae36-bc669c754483",
+                  "title": "Attacker Logging In - stolen credentials, healthcare provider",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "An attacker logs into a healthcare provider's account using stolen credentials where they can then perform further attacks on exposed patient records - EoP Spoofing #6",
+                  "mitigation": "Implement and use digital certificates for user authentication that validates a user's identity; also log suspicious behavior such as logging in as a healthcare provider. ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 5,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "children": []
+          },
+          {
+            "position": {
+              "x": 748.75,
+              "y": 40
+            },
+            "size": {
+              "width": 190,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Access Records"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4c70bb57-fed0-4ab3-8295-acbadd68d4c5"
+                },
+                {
+                  "group": "right",
+                  "id": "3ff74f84-cad0-41e9-8984-266435c087a5"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2614a329-3911-4fa0-8a7c-a4113c69fc3d"
+                },
+                {
+                  "group": "left",
+                  "id": "06d338f9-5ac9-4134-80c3-d110fc3cb303"
+                }
+              ]
+            },
+            "id": "e87df135-593c-4fd3-9da2-ccdbddf0f461",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Process",
+              "name": "Access Records",
+              "description": "Healthcare providers viewing or accessing patient records.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 320,
+              "y": 400
+            },
+            "size": {
+              "width": 150,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Messaging"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4c70bb57-fed0-4ab3-8295-acbadd68d4c5"
+                },
+                {
+                  "group": "right",
+                  "id": "3ff74f84-cad0-41e9-8984-266435c087a5"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2614a329-3911-4fa0-8a7c-a4113c69fc3d"
+                },
+                {
+                  "group": "left",
+                  "id": "06d338f9-5ac9-4134-80c3-d110fc3cb303"
+                }
+              ]
+            },
+            "id": "53efc0b7-3f1c-4997-9098-128f05ba86ac",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Process",
+              "name": "Messaging",
+              "description": "If Patient Portal is activated, allows sending messages between healthcare providers and patients. ",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Excessive Messages",
+              "description": "Sending an overwhelming amount of messages.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "0c20ffc2-499b-4b2f-8261-007a14a1f8e5",
+                  "title": "Sending Excessive Messages",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "An attacker can overwhelm the OpenEMR server by continuously sending excessive messages, or even using an automated \"bot\" to send hundreds of thousands of messages to overwhelm the system and cause DoS for users - EoP Denial of Service #4",
+                  "mitigation": "Regulate or add CAPTCHA to prevent automated\"bots\" from sending messages. Introduce message rates to prevent manual sending of excessive messages.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Excessive Messages"
+            ],
+            "id": "fe4a960c-a1b0-42ec-824d-19c6aad8871c",
+            "source": {
+              "cell": "5876b49a-ba91-4e9b-8301-b7921ec08763",
+              "port": "eba1bd62-c8d1-4a2d-affd-e2147302a87a"
+            },
+            "target": {
+              "cell": "53efc0b7-3f1c-4997-9098-128f05ba86ac",
+              "port": "4c70bb57-fed0-4ab3-8295-acbadd68d4c5"
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 160
+              },
+              {
+                "x": 380,
+                "y": 200
+              },
+              {
+                "x": 330,
+                "y": 230
+              },
+              {
+                "x": 260,
+                "y": 310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Altered",
+              "description": "Changes to patient database.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "5ab94420-48a2-4044-9ddc-1239222f6fdb",
+                  "title": "Altering Patient Records",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "An attacker can look at patient records AND edit them maliciously from \"the inside\" - EoS Tampering #10",
+                  "mitigation": "Configure the access control list (ACL) to be of role-based access, so that only verified users who have the particular role or \"job\" have access to such resources and behaviors on OpenEMR. ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Altered"
+            ],
+            "id": "6fc3da48-73b0-44cb-8124-23b6006a6546",
+            "source": {
+              "cell": "adb6c1f1-664f-4c1c-85d8-67eef4e56ed1",
+              "port": "2614a329-3911-4fa0-8a7c-a4113c69fc3d"
+            },
+            "target": {
+              "cell": "eba33b13-14ea-4983-9c5d-b603c33b9076",
+              "port": "898ba77f-b6f2-4bc8-9356-c1ce672af4a7"
+            },
+            "vertices": [
+              {
+                "x": 1160,
+                "y": 240
+              },
+              {
+                "x": 1120,
+                "y": 300
+              },
+              {
+                "x": 1010,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Exposed Records",
+              "description": "Sensitive records are not encrypted.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9e46bfb4-afd5-474a-bf99-24b8a4c8ac95",
+                  "title": "Exposure of Patient Records",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "An attacker can read sensitive patient records that only a healthcare provider and relevant patient should be able to read - EoS Information Disclosure #9",
+                  "mitigation": "Introduce a better access control list (ACL) such as role-based and encrypt sensitive data that should not be read by \"outsiders\".",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Exposed Records"
+            ],
+            "id": "65ac0a87-87cb-49a6-9aa9-2295b63a9abb",
+            "source": {
+              "cell": "e87df135-593c-4fd3-9da2-ccdbddf0f461",
+              "port": "2614a329-3911-4fa0-8a7c-a4113c69fc3d"
+            },
+            "target": {
+              "cell": "eba33b13-14ea-4983-9c5d-b603c33b9076",
+              "port": "898ba77f-b6f2-4bc8-9356-c1ce672af4a7"
+            },
+            "vertices": [
+              {
+                "x": 850,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Modifies Billing",
+              "description": "Changes to billing information.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4d8a0c2c-f1ca-428c-864f-f4a7ef8152ba",
+                  "title": "Admin Changing Billing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "The admin of OpenEMR changes billing receipts to give special discounts to their friends or colleagues - EoP Tampering #10 ",
+                  "mitigation": "Log behaviors and actions such as an admin changing billing for no apparent reason; also have billing changes be approved by another party apart from the admin.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Modifies Billing"
+            ],
+            "id": "41719aeb-72f3-4bbe-b4a5-7fce91fe573c",
+            "source": {
+              "cell": "41806308-d631-430b-92e3-7e1a5ba9e868",
+              "port": "74dbaa77-44ba-4e55-87e2-24a7599ab8c3"
+            },
+            "target": {
+              "cell": "f7b113e8-3255-4f0d-8385-6f59a3992d59",
+              "port": "f4128303-cf1a-486f-a36d-c7da39fd1164"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Brute Force",
+              "description": "Brute force login attempts.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "cfb9511f-09c4-4a31-a1e0-475e84e73861",
+                  "title": "Attacker Causing Account Lockout",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "The attacker knows that there exists an account lockout system that lockouts out an account that has multiple sign in attempts continuously, so the attacker brute force logs into the patient's account cause the patient to lose their account and experience a denial of service - EoP Denial of Service #10",
+                  "mitigation": "Update the account lockout feature to be temporary (for a few minutes or up to an hour), so that the attacker's brute force attempts do not permanently lose the patient's account and data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Brute Force"
+            ],
+            "id": "2577b83f-3aec-454f-ad97-5c9e03b68d68",
+            "source": {
+              "cell": "c4602fad-de9c-42b6-b0c1-fd5a870bb0c6",
+              "port": "4c70bb57-fed0-4ab3-8295-acbadd68d4c5"
+            },
+            "target": {
+              "cell": "5876b49a-ba91-4e9b-8301-b7921ec08763",
+              "port": "eba1bd62-c8d1-4a2d-affd-e2147302a87a"
+            },
+            "vertices": [
+              {
+                "x": 120,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 1038.75,
+              "y": 30
+            },
+            "size": {
+              "width": 190,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Edit Records"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4c70bb57-fed0-4ab3-8295-acbadd68d4c5"
+                },
+                {
+                  "group": "right",
+                  "id": "3ff74f84-cad0-41e9-8984-266435c087a5"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2614a329-3911-4fa0-8a7c-a4113c69fc3d"
+                },
+                {
+                  "group": "left",
+                  "id": "06d338f9-5ac9-4134-80c3-d110fc3cb303"
+                }
+              ]
+            },
+            "id": "adb6c1f1-664f-4c1c-85d8-67eef4e56ed1",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "Edit Records",
+              "description": "Healthcare providers updating lab results, records, notes, etc.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "def1878f-95f1-49c8-8663-947f80c9b2a6",
+                  "title": "Patient Edits Records",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "A patient can update/change/edit their own medical records via an API they found and used - EoP Elevation of Privilege #4",
+                  "mitigation": "Introduce a better access control list (ACL) such as role-based and encrypt sensitive data that should not be read by \"outsiders\".",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 830,
+              "y": 490
+            },
+            "size": {
+              "width": 200,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Patient Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "898ba77f-b6f2-4bc8-9356-c1ce672af4a7"
+                },
+                {
+                  "group": "right",
+                  "id": "5368fd8f-692d-4c1a-8303-6d528dabec23"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f4128303-cf1a-486f-a36d-c7da39fd1164"
+                },
+                {
+                  "group": "left",
+                  "id": "7a6a5893-8316-43d0-a55e-c04c48403676"
+                }
+              ]
+            },
+            "id": "eba33b13-14ea-4983-9c5d-b603c33b9076",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Patient Database",
+              "description": "Database of patient records, medical history, results, appointments, etc.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 50,
+              "y": 455
+            },
+            "size": {
+              "width": 180,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "OpenEMR Logs"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "898ba77f-b6f2-4bc8-9356-c1ce672af4a7"
+                },
+                {
+                  "group": "right",
+                  "id": "5368fd8f-692d-4c1a-8303-6d528dabec23"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f4128303-cf1a-486f-a36d-c7da39fd1164"
+                },
+                {
+                  "group": "left",
+                  "id": "7a6a5893-8316-43d0-a55e-c04c48403676"
+                }
+              ]
+            },
+            "id": "e9d0de26-d1fa-4df1-9489-686c4847e373",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Store",
+              "name": "OpenEMR Logs",
+              "description": "Official logging of information and behaviors/actions done on the OpenEMR application.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "d3500725-d335-4ba6-b391-2d7469464503",
+                  "title": "Loss of Data from Logs",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "An attacker can wrap around logs containing a sensitive attack they performed (such as logging in unauthenticated), and cause the logs  to be lost of the attack being done - EoP Repudiation #7",
+                  "mitigation": "Automatically archive logs as they happen and before they are wrapped around or overwritten. Make the archive logs READ-ONLY to prevent log manipulation again. ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 560,
+              "y": 265
+            },
+            "size": {
+              "width": 170,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Payment/Billing"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "898ba77f-b6f2-4bc8-9356-c1ce672af4a7"
+                },
+                {
+                  "group": "right",
+                  "id": "5368fd8f-692d-4c1a-8303-6d528dabec23"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f4128303-cf1a-486f-a36d-c7da39fd1164"
+                },
+                {
+                  "group": "left",
+                  "id": "7a6a5893-8316-43d0-a55e-c04c48403676"
+                }
+              ]
+            },
+            "id": "f7b113e8-3255-4f0d-8385-6f59a3992d59",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Store",
+              "name": "Payment/Billing",
+              "description": "Database of stored patient payment information and healthcare provider credentials for payment.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "dc8ad98d-6034-4dbb-8007-210db4c67562",
+                  "title": "Healthcare Personal Edits Billing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "A single healthcare worker such as a doctor or nurse edits or increases billing payment receipts for their customers (patients) in their advantage to make more money - EoP Tampering #10",
+                  "mitigation": "Implement a better access control list (ACL) to something such as role-based access, so that users such as healthcare providers don't have the role or \"job\" to access the edit billing resource or function.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 14
+  }
+}
